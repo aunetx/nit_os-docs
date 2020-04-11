@@ -1,0 +1,10 @@
+graph TD
+    subgraph init 
+        IA(architecture)
+        IA --> IM(memory)
+        IM --> IP(multiprocessing)
+    end
+    subgraph main
+        IP --> M(main process)
+        M -->|int| M
+    end

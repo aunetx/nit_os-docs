@@ -1,0 +1,18 @@
+graph TD
+    subgraph driver trait
+        I(inputs)
+        O(outputs)
+        subgraph driver
+            P(processing)
+        end
+        I --> P
+        P --> O
+    end
+    subgraph kernel
+        INT(interrupt)
+        OUT(action)
+        C(continue execution)
+        INT -->|async| I
+        O -->|promise| OUT
+        INT --> C
+    end

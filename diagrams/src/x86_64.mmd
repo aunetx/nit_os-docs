@@ -1,0 +1,5 @@
+graph TD
+    GDT(init GDT)
+    GDT ==> IDT(init IDT)
+    IDT ==> PICS(init PICs)
+    PICS .-> INT(activate interrupts)

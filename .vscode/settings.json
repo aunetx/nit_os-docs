@@ -1,0 +1,5 @@
+{
+    "code-runner.executorMapByFileExtension": {
+        ".mmd": "$workspaceRoot/docs/diagrams/generate.sh --no_rm"
+    }
+}
